@@ -10,7 +10,8 @@ declare -A sites=(
   ["GitHub"]="https://github.com/juanest2025"
   ["La.movie"]="https://lamovie.org/"
   ["Tioplus.app"]="https://tioplus.app/"
-  ["CuevaDeAna"]="https://cuevadeana.com/"
+  ["Cuevana"]="https://cue-vana3.org/"
+  ["Cuevana main"]="https://cuevana.ca/"
   ["Goojara"]="https://ww1.goojara.to/ejdWP7"
   ["kimcartoon"]="https://kimcartoon.si/CartoonList"
   ["kimcartoon 2"]="https://kimcartoon.com.co/"
@@ -49,20 +50,41 @@ declare -A sites=(
   ["Zoom - Geometria Vectorial"]="https://udearroba.zoom.us/j/93110155705"
   ["Love Next Door 1"]="https://www.doramasyt.com/dorama/amor-en-la-puerta-de-al-lado-latino-sub-espanol"
   ["Love Next Door 2"]="https://doramasflix.in/doramas-online/love-next-door"
+  ["It's ok not to be ok"]="https://www.doramasyt.com/dorama/its-okay-to-not-be-okay-sub-espanol"
   ["King the land"]="https://www.doramasyt.com/dorama/king-the-land-latino-sub-espanol"
   ["La reina de las lagrimas"]="https://www.doramasyt.com/dorama/la-reina-de-las-lagrimas-latino-sub-espanol"
+  ["Twenty-Five, Twenty-One"]="https://www.doramasyt.com/dorama/twenty-five-twenty-one-sub-espanol"
+  ["Amor entre lineas"]="https://www.doramasyt.com/dorama/amor-entre-lineas-latino-sub-espanol"
+  ["Un novio por suscripcion"]="https://www.doramasyt.com/dorama/un-novio-por-suscripcion-latino-sub-espanol"
+  ["beso dinamita"]="https://www.doramasyt.com/dorama/beso-dinamita-latino-sub-espanol"
+  ["Bon appetit mangestad"]="https://www.doramasyt.com/dorama/bon-appetit-majestad-latino-sub-espanol"
+  ["Queen of Divorce"]="https://www.doramasyt.com/dorama/queen-of-divorce-sub-espanol"
+  ["Nos vemos en la oficina"]="https://tioplus.app/serie/nos-vemos-en-la-oficina"
+  ["Cashman"]="https://tioplus.app/serie/cashman"
+  ["El genio y los deseos"]="https://www.doramasyt.com/dorama/el-genio-y-los-deseos-genie-make-a-wish-latino-sub-espanol"
+  ["La reina de la confianza"]="https://tioplus.app/serie/la-reina-de-la-confianza"
   ["XVideos"]="https://www.xvideos.com/"
   ["Pornhub"]="https://es.pornhub.com/"
   ["Google Docs"]="https://docs.new"
   ["Google slides"]="https://slides.new"
+  ["Amor de mentira Fav"]="https://www.doramasyt.com/dorama/amor-de-mentira-latino-sub-espanol"
+  ["Monthly Magazine Home Fav"]="https://www.doramasyt.com/dorama/monthly-magazine-home-sub-espanol"
+  ["La Sonrisa Se Ha Ido De Tus Ojos Fav"]="https://www.doramasyt.com/dorama/la-sonrisa-se-ha-ido-de-tus-ojos-latino-sub-espanol"
+  ["Love Reset Fav"]="https://www.doramasyt.com/dorama/love-reset-sub-espanol"
+  ["Teach you a lesson"]="https://doramasflix.in/doramas-online/teach-you-a-lesson"
+  ["Mi nemesis con aires de grandeza"]="https://www.doramasyt.com/dorama/mi-nemesis-con-aires-de-realeza-latino-sub-espanol"
+  ["Propuesta laboral fav romance"]="https://www.doramasyt.com/dorama/propuesta-laboral-a-business-proposal-latino-sub-espanol"
   ["Word"]="https://word.cloud.microsoft/"
   ["Power Point"]="https://powerpoint.cloud.microsoft/"
 )
 
 selection=$(
-    printf "%s\n" "${!sites[@]}" |
-    sort |
-    rofi -dmenu -i -matching fuzzy -p "Sitios"
+    printf "%s\n" "${!sites[@]}" | sort | \
+    rofi -dmenu \
+         -i \
+         -matching fuzzy \
+         -sort \
+         -p "🌐 Sitios"
 )
 
 if [ -n "$selection" ]; then

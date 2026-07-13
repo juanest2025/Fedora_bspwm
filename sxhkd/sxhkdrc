@@ -7,8 +7,14 @@ super + shift + c
 super + Return
 	kitty
 # program launcher
-super + space
+alt + space
 	"$HOME/.config/rofi/launcher.sh"
+# program webs 
+alt + m 
+	"$HOME/.config/rofi/sitios/webs.sh"
+# program sites 
+alt + shift + i 
+	"$HOME/.config/rofi/sitios/sites.sh"
 # Explorador de Archivos (Thunar)
 super + e
 	dolphin	
