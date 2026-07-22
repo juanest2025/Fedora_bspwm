@@ -4,6 +4,11 @@ super + shift + c
 
 ## sxhkd edit dotfiles
 alt + Shift + u
+    kitty -e sudo nvim ~/.config/sxhkd/sxhkdrc
+
+# Wallpaper script selector with feh
+alt + shift + p
+    ~/.config/rofi/scripts/wallpaper.sh
 
 # Bloquear Pantalla (Blur)
 ctrl + shift + l  
