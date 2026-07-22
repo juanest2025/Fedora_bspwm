@@ -95,27 +95,8 @@ alt + shift + k
     ~/.config/sxhkd/scripts/wifi.sh
 
 ### WORKSPACES CON EL HOMEROW CON ALTGR MOD5
-mod5 + a
-    bspc desktop -f 1
-mod5 + s
-    bspc desktop -f 2
-mod5 + d
-    bspc desktop -f 3
-mod5 + f
-    bspc desktop -f 4
-mod5 + g
-    bspc desktop -f 5
-mod5 + h
-    bspc desktop -f 6
-mod5 + j
-    bspc desktop -f 7
-mod5 + k
-    bspc desktop -f 8
-mod5 + l
-    bspc desktop -f 9
-mod5 + i
-    bspc desktop -f 10
-
+mod5 + {a,s,d,f,g,h,j,k,l}
+    bspc desktop -f '^'{1,2,3,4,5,6,7,8,9}
 ## Captura de pantalla (Maim / Copy on Release)
 # Pantalla completa
 Print
