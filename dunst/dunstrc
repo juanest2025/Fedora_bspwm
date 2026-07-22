@@ -12,17 +12,17 @@
     hide_duplicate_count = false
     notification_limit = 6
 
-    width = 320
-    height = 120
+    width = 360
+    height = 0  
     origin = bottom-right
     offset = 12x12
 
     padding = 12
     horizontal_padding = 12
     text_icon_padding = 8
-    frame_width = 2
+    frame_width = 1
     separator_height = 1
-    corner_radius = 8
+    corner_radius = 12 
 
     transparency = 10
     idle_threshold = 120

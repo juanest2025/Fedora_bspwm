@@ -1,0 +1,18 @@
+crea el archivo en la direccion:
+/etc/X11/xorg.conf.d/30-touchpad.conf
+
+y pon en esta:
+
+Section "InputClass"
+    Identifier "touchpad"
+    MatchIsTouchpad "on"
+    Driver "libinput"
+
+    Option "Tapping" "on"
+    Option "NaturalScrolling" "true"
+    Option "ScrollMethod" "twofinger"
+    Option "DisableWhileTyping" "true"
+    Option "MiddleEmulation" "true"
+    Option "AccelProfile" "adaptive"
+    Option "AccelSpeed" "0.2"
+EndSection

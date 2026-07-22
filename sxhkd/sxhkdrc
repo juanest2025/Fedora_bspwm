@@ -2,6 +2,32 @@
 super + shift + c
 	pkill -USR1 -x sxhkd
 
+## sxhkd edit dotfiles
+alt + Shift + u
+
+# Bloquear Pantalla (Blur)
+ctrl + shift + l  
+	i3lock	
+
+# Task Manager (btop)
+ctrl + shift + Escape
+	kitty -e btop
+
+# Lanzador de musica (cmus) 
+alt + i 
+	kitty -e cmus 
+
+# program webs 
+alt + m 
+	"$HOME/.config/rofi/sitios/webs.sh"
+# program sites 
+alt + shift + i 
+	"$HOME/.config/rofi/sitios/sites.sh"
+
+# logout
+ctrl + shift + m
+    ~/.config/rofi/powermenu.sh
+
 ### Aplicaciones 
 # terminal 
 super + Return
@@ -9,15 +35,86 @@ super + Return
 # program launcher
 alt + space
 	"$HOME/.config/rofi/launcher.sh"
-# program webs 
-alt + m 
-	"$HOME/.config/rofi/sitios/webs.sh"
-# program sites 
-alt + shift + i 
-	"$HOME/.config/rofi/sitios/sites.sh"
 # Explorador de Archivos (Thunar)
 super + e
 	dolphin	
+# Brave browser
+super + b 
+	brave-browser
+# Obsidian
+alt + shift + o
+    flatpak run md.obsidian.Obsidian
+# Google Chrome
+super + c
+    google-chrome-stable
+# Telegram
+super + t
+    flatpak run org.telegram.desktop
+# Zen Browser
+alt + shift + f
+    flatpak run app.zen_browser.zen
+# Calendario
+alt + u
+    gnome-calendar
+# Reloj
+alt + q
+    gnome-clocks
+### Sites 
+# Notion
+super + n
+    brave-browser --app="https://www.notion.so/7072782b14f845239198f43c5400861d"
+# WhatsApp Web
+super + w
+    brave-browser --app="https://web.whatsapp.com"
+# Google Drive
+super + d
+    brave-browser --app="https://drive.google.com/drive/my-drive"
+# Instagram
+super + i
+    brave-browser --app="https://www.instagram.com"
+# Discord
+alt + shift + d
+    brave-browser --app="https://discord.com/channels/@me"
+
+### Anime local
+alt + shift + ntilde
+    kitty -e bash -c 'cd "$HOME/Desktop/anime" && ranger'
+
+### Scripts 
+# Iniciar Obsidian backup en el drive
+super + x
+    ~/.config/sxhkd/scripts/start.sh
+# Apagar PC
+alt + shift + m
+    ~/.config/sxhkd/scripts/apagar.sh
+# Reiniciar Wi-Fi
+alt + shift + l
+    ~/.config/sxhkd/scripts/mejorar.wifi.sh
+# Conectar al Wi-Fi de casa
+alt + shift + k
+    ~/.config/sxhkd/scripts/wifi.sh
+
+### WORKSPACES CON EL HOMEROW CON ALTGR MOD5
+mod5 + a
+    bspc desktop -f 1
+mod5 + s
+    bspc desktop -f 2
+mod5 + d
+    bspc desktop -f 3
+mod5 + f
+    bspc desktop -f 4
+mod5 + g
+    bspc desktop -f 5
+mod5 + h
+    bspc desktop -f 6
+mod5 + j
+    bspc desktop -f 7
+mod5 + k
+    bspc desktop -f 8
+mod5 + l
+    bspc desktop -f 9
+mod5 + i
+    bspc desktop -f 10
 
 ## Captura de pantalla (Maim / Copy on Release)
 # Pantalla completa
@@ -40,9 +137,6 @@ ctrl + shift + Up
 	brightnessctl set +2%
 ctrl + shift + Down
 	brightnessctl set 2%-
-# Task Manager (btop)
-ctrl + shift + Escape
-	kitty -e btop
 
 ### atajos bspwm hotkeys
 
@@ -83,8 +177,8 @@ super + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-super + {bracketleft,bracketright,o,i}
-	"$HOME/.config/bspwm/scripts/desktop_navigation.sh" {next,prev,next,prev}
+#super + {bracketleft,bracketright,o,i}
+#	"$HOME/.config/bspwm/scripts/desktop_navigation.sh" {next,prev,next,prev}
 
 # focus the last node/desktop
 super + grave
@@ -139,11 +233,7 @@ super + {Left,Down,Up,Right}
 
 ## Captura de pantalla (Maim / Copy on Release)
 # super + shift + s: Selector -> Clipboard (Windows-style)
-super + shift + s
-	"$HOME/.config/bspwm/scripts/screenshot_copy.sh"
-
-# Bloquear Pantalla (Blur)
-super + BackSpace
-	i3lock	
+#super + shift + s
+#	"$HOME/.config/bspwm/scripts/screenshot_copy.sh"
 
 
