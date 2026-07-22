@@ -96,7 +96,13 @@ alt + shift + k
 
 ### WORKSPACES CON EL HOMEROW CON ALTGR MOD5
 mod5 + {a,s,d,f,g,h,j,k,l}
-    bspc desktop -f '^'{1,2,3,4,5,6,7,8,9}
+    bspc desktop -f '^'{1,2,3,4,5,6,7,8,9,10}
+
+# Send window to workspace
+mod5 + shift + {a,s,d,f,g,h,j,k,l}
+	bspc node -d '^'{1,2,3,4,5,6,7,8,9}
+
+
 ## Captura de pantalla (Maim / Copy on Release)
 # Pantalla completa
 Print
@@ -171,10 +177,6 @@ alt + Tab
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
-
-# focus or send to the hidden desktops
-super + {_,shift + }{F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12}
-	bspc {desktop -f,node -d} '^{11,12,13,14,15,16,17,18,19,20,21,22}'
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
