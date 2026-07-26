@@ -39,6 +39,7 @@ declare -A sites=(
   ["Google Photos"]="http://photos.google.com/"
   ["Correo UdeA"]="https://mail.google.com/mail/u/0/#inbox"
   ["Ude@"]="https://udearroba.udea.edu.co/internos/login/index.php"
+  ["Ingeni@"]="https://virtualingenieriaudea.co/"
   ["Drive"]="https://drive.google.com/drive/my-drive"
   ["Calendar"]="https://calendar.google.com/calendar/u/0/r"
   ["Meet.google"]="https://meet.google.com/landing"
