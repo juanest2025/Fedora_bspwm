@@ -18,6 +18,10 @@ ctrl + shift + l
 ctrl + shift + Escape
 	kitty -e btop
 
+# wlogout para x11 
+ctrl + shift + e 
+	~/.config/rofi/scripts/powermenu.sh
+
 # Lanzador de musica (cmus) 
 alt + i 
 	kitty -e cmus 
