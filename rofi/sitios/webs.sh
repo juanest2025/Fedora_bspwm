@@ -19,6 +19,7 @@ declare -A sites=(
   ["Claude AI"]="https://claude.ai/new"
   ["ChatGPT"]="https://chatgpt.com/"
   ["DeepSeek"]="https://chat.deepseek.com/"
+  ["Kimi k3"]="https://www.kimi.com/"
   ["Gemini"]="https://gemini.google.com/app"
   ["Sesame"]="https://app.sesame.com"
   ["Tioanime"]="https://tioanime.com/"
