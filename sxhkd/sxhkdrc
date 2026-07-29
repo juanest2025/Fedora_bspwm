@@ -4,7 +4,7 @@ super + shift + c
 
 ## sxhkd edit dotfiles
 alt + Shift + u
-    kitty -e sudo nvim ~/.config/sxhkd/sxhkdrc
+    kitty -e nvim ~/.config/sxhkd/sxhkdrc
 
 # Wallpaper script selector with feh
 alt + shift + p
@@ -119,6 +119,20 @@ Print
 # Selección
 shift + Print
     ~/.config/sxhkd/scripts/screenshot.sh area
+
+## SCREEN RECORDING
+
+# Grabar pantalla completa + audio
+super + Print 
+    ~/.config/sxhkd/scripts/record.sh full
+
+# Grabar región seleccionada + audio
+super + shift + Print 
+    ~/.config/sxhkd/scripts/record.sh area
+
+# Detener grabación
+super + shift + x
+    pkill ffmpeg
 
 ### VOLUMEN 
 ctrl + shift + Right

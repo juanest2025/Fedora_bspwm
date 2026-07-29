@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo dnf update -y 
-sudo dnf autoremove -y
-sudo dnf clean all -y  
-

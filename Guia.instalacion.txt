@@ -2,5 +2,9 @@
 1. SCREENSHOTS
 =====================================================================
 sudo dnf install maim slop xclip libnotify
+===================================================================
+2. GRABAR PANTALLA
+======================================================================
+sudo dnf install ffmpeg slop xorg-x11-utils pulseaudio-utils
 
 
