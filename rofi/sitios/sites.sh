@@ -12,6 +12,7 @@ declare -A sites=(
   ["Cuevana main"]="https://cuevana.ca/"
   ["CuevaDeAna"]="https://cuevadeana.com/"
   ["Goojara"]="https://ww1.goojara.to/ejdWP7"
+  ["Flathub"]="https://flathub.org/es"
   ["kimcartoon"]="https://kimcartoon.si/CartoonList"
   ["kimcartoon 2"]="https://kimcartoon.com.co/"
   ["Miraculos.to"]="https://miraculous.to/en/"
